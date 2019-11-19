@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM API</title>
+  <style>
+    .red {
+      background: red;
+    }
+
+    .blue {
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div1">
+    <div id="test">
+      <span>111</span>
+      <div class="red"></div>
+    </div>
+    <div id="test2">
+      <span>222</span>
+      <div class="red"></div>
+    </div>
+    <div id="test3">
+      <div class="red">2332323232</div>
+    </div>
+  </div>
+
+  <div id="empty">
+    <div id="s1">1</div>
+    <div id="s2">2</div>
+    <div id="s3">3</div>
+  </div>
+
+  <div id="siblings">
+    <span id="sib1">1</span>
+    <span id="sib2">2</span>
+    <span id="sib3">3</span>
+  </div>
+
+  <div id="children">
+    <div id="c1">c1</div>
+    <div id="c2">c2</div>
+    <div id="c3">c3</div>
+  </div>
+  <script src="./dom.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
