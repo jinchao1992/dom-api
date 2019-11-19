@@ -226,7 +226,7 @@ window.dom = {
    */
   next(node) {
     let x = node.nextSibling
-    if (x.nodeType === 3) {
+    while (x && x.nodeType === 3) {
       x = x.nextSibling
     }
     return x
@@ -238,7 +238,7 @@ window.dom = {
    */
   prev(node) {
     let x = node.previousSibling
-    if (x.nodeType === 3) {
+    while (x && x.nodeType === 3) {
       x = x.previousSibling
     }
     return x
